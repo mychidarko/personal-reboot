@@ -1,3 +1,8 @@
+// preloader
+window.addEventListener('load', function () {
+	$(".page-preloader")[0].className += ' exit';
+});
+
 // theme toggle button
 let themeToggle = $('#theme-toggle')[0];
 

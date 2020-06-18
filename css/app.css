@@ -636,3 +636,55 @@ fieldset[disabled] .btn-success.active {
   opacity: 0;
   display: none;
 }
+.page-preloader {
+  position: fixed !important;
+  z-index: 100000 !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column;
+  background: inherit !important;
+}
+.page-preloader > h2 {
+  width: 100px;
+  text-transform: initial !important;
+  animation: loading 5s;
+  animation-fill-mode: both;
+}
+.page-preloader.exit {
+  animation: fadeOut 1.5s !important;
+  animation-fill-mode: forwards !important;
+}
+@keyframes loading {
+  100% {
+    color: inherit !important;
+  }
+  90% {
+    color: rgb(56, 1, 56);
+  }
+  70% {
+    color: blue;
+  }
+  55% {
+    color: green;
+  }
+  40% {
+    color: orange;
+  }
+  20% {
+    color: red;
+  }
+  0% {
+    color: inherit !important;
+  }
+}
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
