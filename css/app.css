@@ -310,6 +310,25 @@ section.about {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
   }
+  .md\:mr-0 {
+    margin-right: 0px !important;
+  }
+  .md\:mr-1 {
+    margin-right: 5px !important;
+  }
+  .md\:mr-2 {
+    margin-right: 10px !important;
+  }
+  .md\:mr-3 {
+    margin-right: 15px !important;
+  }
+  .md\:mr-4 {
+    margin-right: 20px !important;
+  }
+  .md\:br-sm {
+    border-radius: 3px !important;
+    font-size: smaller !important;
+  }
 }
 .floating-label-form-group {
   position: relative;
@@ -440,8 +459,9 @@ footer {
   border: 1px solid #ff5a8b !important;
 }
 .btn-insta-inverse:hover {
-  background: linear-gradient(#d911fc, #fc4811) !important;
-  border: 1px solid linear-gradient(#d911fc, #fc4811) !important;
+  background: linear-gradient(to left, #d911fc, #fc4811) !important;
+  padding: 7px 13px;
+  border: none !important;
   color: white !important;
 }
 .btn-outline {

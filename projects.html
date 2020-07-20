@@ -25,10 +25,12 @@
     <![endif]-->
 </head>
 
-<body id="page-top" class="index">
+<body class="index">
     <div class="page-preloader">
         <h2>Mychi.</h2>
     </div>
+
+    <section id="page-top" style="visibility: hidden !important;"></section>
 
     <nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top navbar-custom">
         <div class="container">
@@ -36,19 +38,19 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#page-top">Mychi.</a>
+                <a class="navbar-brand" href="./index.html">Mychi.</a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="page-scroll">
-                        <a href="#page-top">Hello</a>
+                        <a href="./index.html">Hello</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">About</a>
+                        <a href="./index.html#about">About</a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
+                    <li class="page-scroll selected">
+                        <a href="#page-top">Portfolio</a>
                     </li>
                     <li>
                         <a style="cursor: pointer;" id="theme-toggle">🌒</a>
@@ -58,145 +60,15 @@
         </div>
     </nav>
 
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 hidden-md hidden-lg">
-                    <img class="img-responsive" src="img/me.jpg" alt="">
-                </div>
-                <div class="col-lg-5 col-md-6">
-                    <div class="intro-text">
-                        <span class="name">Hi, my name's <span class="text-blue">Michael Darko</span></span>
-                        <hr class="star-light" style="border-color: transparent !important;">
-                        <span class="skills">
-                            I'm a full-stack web, mobile and desktop app developer with a eye for simplicity and functionality-driven design.
-                        </span>
-                        <br>
-                        <a href="mailto:mychi.darko@gmail.com" class="btn btn-primary btn-lg talk-to-me">Talk To Me</a>
-                    </div>
-                </div>
-                <div class="col-lg-7 col-md-6 hidden-xs hidden-sm img text-right">
-                    <div class="hidden-xs hidden-sm hidden-lg" style="margin-bottom: 70px;"></div>
-                    <img class="" src="img/me.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- About Section -->
-    <section class="success about" id="about">
+    <section id="portfolio" style="margin-top: -130px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>About Me.</h2>
-                </div>
-                <div class="col-lg-12" style="height: 25px;"></div>
-                <div class="col-lg-12">
-                    <p>
-                        I'm a 18 year old Ghanaian with about 2 years experience developing websites, apps and APIs specializing in JavaScript and PHP.
-                        I've worked on many medium to large scale projects ranging from web apps, APIs, desktop and mobile apps, browser extensions,
-                        libraries and yes, even frameworks.
-                    </p>
-                    <p class="d-flex">
-                        <a href="https://github.com/mr-phlames" class="btn btn-lg btn-outline btn-github md:mr-1 md:br-sm" target="_blank">
-                            <i class="fa fa-github"></i> <span class="hidden-sm hidden-xs">View My Github</span>
-                        </a>
-                        <a href="https://instagram.com/mychi.darko" class="btn btn-lg btn-outline btn-insta md:mr-1 md:br-sm" target="_blank">
-                            <i class="fa fa-instagram"></i> <span class="hidden-sm hidden-xs">View My Instagram</span>
-                        </a>
-                        <a href="https://wa.me/233560265879" class="btn btn-lg btn-outline btn-whatsapp md:br-sm" target="_blank">
-                            <i class="fa fa-whatsapp"></i> <span class="hidden-sm hidden-xs">Chat On Whatsapp?</span>
-                        </a>
-                    </p>
-                </div>
-            </div>
-            <br><br>
-            <div class="row">
-                <div class="col-lg-12">
-                    <h4>My Skills.</h4>
-                </div>
-                <div class="col-lg-12" style="height: 15px;"></div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="panel panel-default skill-panel">
-                        <h5>Web Dev.</h5>
-                        <p>I bring life to amazing projects using popular web technologies.</p>
-                        <br>
-                        <h6>Languages/Libraries I Use:</h6>
-                        <ul>
-                            <li>CSS, SASS</li>
-                            <li>Bootstrap, Semantic UI, Tailwind, Spectre</li>
-                            <li>JS, TS, jQuery, React, Vue, NodeJS</li>
-                            <li>PHP, Laravel, Slim, Leaf</li>
-                            <li>Ruby, Ruby on Rails</li>
-                        </ul>
-                        <br>
-                        <h6>Stuff I Create:</h6>
-                        <ul>
-                            <li>Websites & Web Apps</li>
-                            <li>PWAs</li>
-                            <li>APIs</li>
-                            <li>Browser Extensions</li>
-                            <li>Libraries</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="panel panel-default skill-panel">
-                        <h5>App Dev.</h5>
-                        <p>I create cross-platform applications that run smoothly on all your devices: web, pc and mobile.</p>
-                        <br>
-                        <h6>Languages/Libraries I Use:</h6>
-                        <ul>
-                            <li>Dart, Flutter</li>
-                            <li>JavaScript, React Native</li>
-                            <li>JavaScript, Electron</li>
-                            <li>Ionic</li>
-                        </ul>
-                        <br>
-                        <h6>Platforms I Work With:</h6>
-                        <ul>
-                            <li>Android, IOS</li>
-                            <li>Windows, Mac, Linux</li>
-                            <li>Web</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="panel panel-default skill-panel">
-                        <h5>Design.</h5>
-                        <p>
-                            Simple graphics, deep messages and minimal presentations, that's my design code. I create graphics that
-                            people can relate to using as few words as possible.
-                        </p>
-                        <br>
-                        <h6>Things I Enjoy Creating:</h6>
-                        <ul>
-                            <li>Logos</li>
-                            <li>Illustrations</li>
-                            <li>Flyers, Banners</li>
-                        </ul>
-                        <br>
-                        <h6>Tools I Use:</h6>
-                        <ul>
-                            <li>Adobe Illustrator</li>
-                            <li>Affinity Desgner</li>
-                            <li>PicsArt</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>My Recent Works.</h2>
+                    <h2>My Portfolio.</h2>
                     <br>
                     <p>
-                        These are some of my most recent projects. Almost all of them are open source projects, so don't hold back. Feel free
+                        This is my project gallery, consisting of personal, open source and credited client works, however,
+                        most of them are open source projects, so don't hold back. Feel free
                         to edit, copy and contribute to them.
                     </p>
                     <br>
@@ -262,7 +134,7 @@
                     </a>
                 </div>
             </div>
-            <a href="./projects.html" class="btn btn-linkedin-inverse" style="font-size: 20px;">View All My Projects</a>
+            <a href="./pages/projects.html" class="btn btn-linkedin-inverse" style="font-size: 20px;">View All My Projects</a>
         </div>
     </section>
 
