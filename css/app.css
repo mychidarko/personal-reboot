@@ -310,6 +310,10 @@ section.about {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
   }
+  #portfolio .portfolio-item img.img-responsive {
+    height: 210px !important;
+    width: 100%;
+  }
   .md\:mr-0 {
     margin-right: 0px !important;
   }
@@ -655,10 +659,6 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .modal-backdrop {
   opacity: 0;
   display: none;
-}
-#portfolio .portfolio-item img.img-responsive {
-  height: 210px !important;
-  width: 100%;
 }
 .page-preloader {
   position: fixed !important;

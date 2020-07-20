@@ -42,37 +42,37 @@ function applyMode(theme = "light") {
 	if (theme !== "dark" && theme !== "light") theme = "light";
 	if (theme === "dark") {
 		document.body.style = "background: #000 !important;  color: #ccc !important;";
-		header.style = "background: #000;  color: #ccc !important;";
-		navbar.style = "background: rgba(22, 22, 22, 0.8); box-shadow: 0px 1px 30px rgb(0, 0, 0);";
-		about.style = "background: #2a2a2a;  color: #ccc !important;";
+		!header ? null : header.style = "background: #000;  color: #ccc !important;";
+		!navbar ? null : navbar.style = "background: rgba(22, 22, 22, 0.8); box-shadow: 0px 1px 30px rgb(0, 0, 0);";
+		!about ? null : about.style = "background: #2a2a2a;  color: #ccc !important;";
 		for (i = 0; i < $(".skill-panel").length; i++) {
 			$(".skill-panel")[i].style = "background: #000; color: #ccc; border: 1px solid #222; box-shadow: 0px 0px 5px #444;";
 		}
-		portfolio.style = "background: #000;  color: #ccc !important; z-index: 100 !important;";
-		talk.style = "background: #2a2a2a;  color: #ccc !important; z-index: 0 !important;";
-		socialize.style = "background: #2a2a2a;  color: #ccc !important;";
-		footer.style = "background: #2a2a2a;  color: #ccc !important;";
+		!portfolio ? null : portfolio.style = "background: #000;  color: #ccc !important; z-index: 100 !important;";
+		!talk ? null : talk.style = "background: #2a2a2a;  color: #ccc !important; z-index: 0 !important;";
+		!socialize ? null : socialize.style = "background: #2a2a2a;  color: #ccc !important;";
+		!footer ? null : footer.style = "background: #2a2a2a;  color: #ccc !important;";
 		for (i = 0; i < $(".modal-content").length; i++) {
 			$(".modal-content")[i].style = "background: #000; color: #ccc; border: 1px solid #222; box-shadow: 0px 0px 5px #444;";
 		}
 		$(".btn-github-inverse")[0].style = "color: white !important; border: 1px solid white;";
-		themeToggle.innerText = "😎";
+		!themeToggle ? null : themeToggle.innerText = "😎";
 	} else if (theme === "light") {
 		document.body.style = "background: #fff !important;  color: #rgb(107, 107, 107) !important;";
-		header.style = "background: #fff;  color: #rgb(107, 107, 107) !important;";
-		navbar.style = "background: rgba(255, 255, 255, 0.9); box-shadow: 0px 1px 30px rgba(124, 124, 124, 0.3);";
-		about.style = "background: rgb(117, 124, 129);  color: #fff !important;";
+		!header ? null : header.style = "background: #fff;  color: #rgb(107, 107, 107) !important;";
+		!navbar ? null : navbar.style = "background: rgba(255, 255, 255, 0.9); box-shadow: 0px 1px 30px rgba(124, 124, 124, 0.3);";
+		!about ? null : about.style = "background: rgb(117, 124, 129);  color: #fff !important;";
 		for (i = 0; i < $(".skill-panel").length; i++) {
 			$(".skill-panel")[i].style = "background: #fff; color: #233140; border: none; box-shadow: none;";
 		}
-		portfolio.style = "background: #fff;  color: #black !important; z-index: 100 !important;";
-		talk.style = "background: #fff;  color: #000 !important; z-index: 0 !important;";
-		socialize.style = "background: #fff;  color: #000 !important;";
-		footer.style = "background: #fff;  color: #ccc !important;";
+		!portfolio ? null : portfolio.style = "background: #fff;  color: #black !important; z-index: 100 !important;";
+		!talk ? null : talk.style = "background: #fff;  color: #000 !important; z-index: 0 !important;";
+		!socialize ? null : socialize.style = "background: #fff;  color: #000 !important;";
+		!footer ? null : footer.style = "background: #fff;  color: #ccc !important;";
 		for (i = 0; i < $(".modal-content").length; i++) {
 			$(".modal-content")[i].style = "background: #fff; color: #000;";
 		}
 		$(".btn-github-inverse")[0].style = "color: black; border: 1px solid black;";
-		themeToggle.innerText = "🌒";
+		!themeToggle ? null : themeToggle.innerText = "🌒";
 	}
 }
