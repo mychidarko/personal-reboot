@@ -656,6 +656,10 @@ fieldset[disabled] .btn-success.active {
   opacity: 0;
   display: none;
 }
+#portfolio .portfolio-item img.img-responsive {
+  height: 210px !important;
+  width: 100%;
+}
 .page-preloader {
   position: fixed !important;
   z-index: 100000 !important;
