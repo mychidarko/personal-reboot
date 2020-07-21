@@ -676,8 +676,9 @@ fieldset[disabled] .btn-success.active {
 .page-preloader > h2 {
   width: 100px;
   text-transform: initial !important;
-  animation: loading 5s;
+  animation: loading 7s;
   animation-fill-mode: both;
+  animation-iteration-count: infinite;
 }
 .page-preloader.exit {
   animation: fadeOut 1.5s !important;
